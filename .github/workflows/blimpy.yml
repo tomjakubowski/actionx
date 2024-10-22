@@ -2,12 +2,12 @@ name: blimpy
 on:
   push:
     branches:
-      - 'master'
+      - "main"
   pull_request:
   workflow_dispatch:
 
 jobs:
-  basic:
+  blimpy:
     strategy:
       fail-fast: false
       matrix:
@@ -16,5 +16,3 @@ jobs:
     steps:
       - name: blimpy
         run: echo blimpy
-
-
